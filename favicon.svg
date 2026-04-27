@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0A0A12"/>
+      <stop offset="100%" stop-color="#1A1220"/>
+    </linearGradient>
+    <linearGradient id="cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#25F4EE"/>
+      <stop offset="100%" stop-color="#0BB8B0"/>
+    </linearGradient>
+    <linearGradient id="pink" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FE2C55"/>
+      <stop offset="100%" stop-color="#B21940"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FE2C55" stop-opacity="0.55"/>
+      <stop offset="70%" stop-color="#25F4EE" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- Rounded background -->
+  <rect width="32" height="32" rx="8" fill="url(#bg)"/>
+  <circle cx="16" cy="16" r="15" fill="url(#glow)"/>
+
+  <!-- Chromatic shift: cyan note (offset left) -->
+  <g transform="translate(-1.2,-0.6)" opacity="0.95">
+    <path d="M15.2 6.5 L15.2 19.3 Q15.2 21.8 13.0 22.8 Q10.5 23.9 8.7 22.1 Q7.2 20.5 8.5 18.6 Q9.8 16.9 12.0 17.4 L12.0 10.0 Q14.8 11.6 18.3 11.4 L18.3 8.5 Q16.1 8.3 15.2 6.5 Z"
+          fill="url(#cyan)"/>
+  </g>
+
+  <!-- Chromatic shift: pink note (offset right) -->
+  <g transform="translate(1.2,0.6)" opacity="0.95" style="mix-blend-mode:screen">
+    <path d="M15.2 6.5 L15.2 19.3 Q15.2 21.8 13.0 22.8 Q10.5 23.9 8.7 22.1 Q7.2 20.5 8.5 18.6 Q9.8 16.9 12.0 17.4 L12.0 10.0 Q14.8 11.6 18.3 11.4 L18.3 8.5 Q16.1 8.3 15.2 6.5 Z"
+          fill="url(#pink)"/>
+  </g>
+
+  <!-- Main white note on top -->
+  <path d="M15.2 6.5 L15.2 19.3 Q15.2 21.8 13.0 22.8 Q10.5 23.9 8.7 22.1 Q7.2 20.5 8.5 18.6 Q9.8 16.9 12.0 17.4 L12.0 10.0 Q14.8 11.6 18.3 11.4 L18.3 8.5 Q16.1 8.3 15.2 6.5 Z"
+        fill="#F5F7FB"/>
+
+  <!-- Small shield VPN mark -->
+  <path d="M22.5 20.5 L27 20.5 L27 24 Q27 26.4 24.75 27.5 Q22.5 26.4 22.5 24 Z"
+        fill="#25F4EE" opacity="0.95"/>
+  <path d="M23.7 23.6 L24.5 24.4 L25.9 22.8" stroke="#0A0A12" stroke-width="1"
+        stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+</svg>
